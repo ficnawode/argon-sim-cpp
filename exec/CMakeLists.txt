@@ -2,9 +2,11 @@ set(NAME exec)
 
 add_executable(${NAME})
 
-# target_link_libraries(${NAME}
-# PRIVATE
-# )
+target_link_libraries(${NAME}
+PRIVATE
+    Boost::boost 
+    Boost::json
+)
 
 target_sources(${NAME}
 PRIVATE
